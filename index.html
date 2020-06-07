@@ -11,18 +11,33 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <nav class="nav">
-          <div class="nav-brand"><a href="index.html">all tours</a></div>
-          <div class="nav-logo"><img src="./img/logo-white.png" alt="logo" /></div>
-
-          <ul class="nav-list">
-            <li class="nav-item"><a href="#" class="nav-link">Log in</a></li>
-            <li class="nav-item"><a href="#" class="nav-link btn btn-sign">sign up</a></li>
-          </ul>
-        </nav>
+    <header class="header">
+      <nav class="nav nav--tours">
+        <a href="#" class="nav__el">All tours</a>
+        <form class="nav__search">
+          <button class="nav__search-btn">
+            <svg>
+              <use xlink:href="./img/icons.svg#icon-search"></use>
+            </svg>
+          </button>
+          <label>
+            <input type="text" placeholder="Search tours" class="nav__search-input" />
+          </label>
+        </form>
+      </nav>
+      <div class="header__logo">
+        <img src="./img/logo-white.png" alt="logo" />
       </div>
+      <nav class="nav nav--user">
+        <a href="#" class="nav__el">My bookings</a>
+        <a href="#" class="nav__el">
+          <img src="./img/users/user-12.jpg" alt="User photo" class="nav__user-img" />
+          <span>mecha2k</span>
+        </a>
+
+        <!-- <button class="nav__el">Log in</button>
+      <button class="nav__el nav__el--cta">Sign up</button> -->
+      </nav>
     </header>
 
     <section>
